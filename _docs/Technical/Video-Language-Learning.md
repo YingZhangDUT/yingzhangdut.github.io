@@ -1,5 +1,5 @@
 ---
-title: Video-Language-Learning
+title: Video Language Learning
 category: Technical
 order: 2
 ---
