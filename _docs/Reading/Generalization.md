@@ -1,6 +1,6 @@
 ---
-title: Android
-category: Devices
+title: Generalization of Neural Networks
+category: Reading
 order: 2
 ---
 

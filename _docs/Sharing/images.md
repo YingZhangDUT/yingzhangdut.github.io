@@ -1,6 +1,6 @@
 ---
 title: Images
-category: Media
+category: Sharing
 order: 1
 ---
 

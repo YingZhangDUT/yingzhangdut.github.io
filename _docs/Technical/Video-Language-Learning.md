@@ -1,6 +1,6 @@
 ---
-title: Phone
-category: Contact Syncing
+title: Video-Language-Learning
+category: Technical
 order: 2
 ---
 

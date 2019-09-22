@@ -1,6 +1,6 @@
 ---
-title: iOS
-category: Devices
+title: Loss Surface
+category: Reading
 order: 1
 ---
 

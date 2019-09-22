@@ -1,6 +1,6 @@
 ---
-title: Facebook
-category: Contact Syncing
+title: Deep-Metric-Learning
+category: Technical
 order: 1
 ---
 
