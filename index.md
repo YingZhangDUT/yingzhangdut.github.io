@@ -1,18 +1,16 @@
 ---
-title: 博客介绍
----
+
 
 个人分享，包括技术，读书，旅游，生活等。
 
-
-### 技术博客
+### 技术
 > Keep Writing, Keep thinking, Keep Learning.
 
-### 读书分享
+### 读书
 > Keep Writing, Keep thinking, Keep Learning.
 
-#### 旅游会议
+### 旅游
 > Keep Writing, Keep thinking, Keep Learning.
 
-#### 生活点滴
+### 生活
 > Keep Writing, Keep thinking, Keep Learning.
