@@ -1,5 +1,5 @@
 ---
-title: Deep-Metric-Learning
+title: Deep Metric Learning
 category: Technical
 order: 1
 ---
