@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ying Zhang</title>
+    <description>Keep Walking, Thinking, and Learning.
+</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 03 Nov 2019 22:31:56 +0800</pubDate>
+    <lastBuildDate>Sun, 03 Nov 2019 22:31:56 +0800</lastBuildDate>
+    <generator>Jekyll v4.0.0</generator>
+    
+      <item>
+        <title>Text-to-Video Retrieval</title>
+        <description>&lt;p&gt;Sync your Facebook contacts with ChatApp. Any of your Facebook friends with ChatApp accounts are automatically added to your contact list!&lt;/p&gt; &lt;blockquote&gt; &lt;p&gt;Signing up with Facebook automatically starts syncing contacts.&lt;/p&gt;...</description>
+        <pubDate>Sun, 03 Nov 2019 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/deep-learning/2019/11/03/Text-Video-Retrieval.html</link>
+        <guid isPermaLink="true">http://localhost:4000/deep-learning/2019/11/03/Text-Video-Retrieval.html</guid>
+        
+        <category>deep-learning</category>
+        
+        <category>retrieval</category>
+        
+        
+        <category>Deep-Learning</category>
+        
+      </item>
+    
+      <item>
+        <title> 深度度量学习 Deep Metric Learning</title>
+        <description>&lt;h1 id=&quot;深度度量学习&quot;&gt;深度度量学习&lt;/h1&gt; &lt;h2 id=&quot;距离度量学习&quot;&gt;距离度量学习&lt;/h2&gt; &lt;p&gt;在搜索任务中，给定查询样本和候选集合，我们一般采用的步骤是：1）提取样本特征；2）计算查询与候选样本特征之间的距离；3）返回距离最小的候选作为搜索结果。&lt;/p&gt; &lt;p&gt;常用的度量样本之间距离的方法包括欧式距离，余弦距离，汉明距离等。然而单一的距离度量方式难以适用不同场景下的搜索任务，已有的距离方式本身也可能存在缺陷，如欧式距离假设特征所有维度的权重相同，因此如何从数据中学习出有效的距离度量成为许多研究者关注的问题。&lt;/p&gt; &lt;p&gt;&lt;strong&gt;距离度量学习（Distance Metric Learning）&lt;/strong&gt;算法一般是学习一个马氏矩阵，从而两个样本点 $\boldsymbol{x}&lt;em&gt;{i}$ 和 $\boldsymbol{x}&lt;/em&gt;{j}$ 之间的距离定义为&lt;/p&gt; &lt;p&gt;​$D_{\boldsymbol{M}}(\boldsymbol{x}&lt;em&gt;{i}, \boldsymbol{x}&lt;/em&gt;{j}) = (\boldsymbol{x}&lt;em&gt;{i}-\boldsymbol{x}&lt;/em&gt;{j})^\top \boldsymbol{M} (\boldsymbol{x}&lt;em&gt;{i}-\boldsymbol{x}&lt;/em&gt;{j})$&lt;/p&gt; &lt;p&gt;距离度量学习在人脸验证和行人再识别场景中研究较多，如 &lt;a href=&quot;http://jmlr.csail.mit.edu/papers/volume10/weinberger09a/weinberger09a.pdf&quot;&gt;Margin Nearest Neighbor Learning (LMNN)&lt;/a&gt;，&lt;a href=&quot;http://www.cs.utexas.edu/users/pjain/pubs/metriclearning_icml.pdf&quot;&gt;Information Theoretic Metric Learning...</description>
+        <pubDate>Sun, 03 Nov 2019 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/deep-learning/2019/11/03/Deep-Metric-Learning.html</link>
+        <guid isPermaLink="true">http://localhost:4000/deep-learning/2019/11/03/Deep-Metric-Learning.html</guid>
+        
+        <category>deep-learning</category>
+        
+        <category>metric-learning</category>
+        
+        
+        <category>Deep-Learning</category>
+        
+      </item>
+    
+  </channel>
+</rss>
