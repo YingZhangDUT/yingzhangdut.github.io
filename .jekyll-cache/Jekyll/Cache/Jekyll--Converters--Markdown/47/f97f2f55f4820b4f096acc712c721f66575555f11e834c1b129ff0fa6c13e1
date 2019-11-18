@@ -1,177 +1,4 @@
-<!DOCTYPE html>
-<html>
-
-  <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title> 深度度量学习 Deep Metric Learning</title>
-  <meta name="description" content="深度度量学习">
-  
-  <meta name="author" content="Ying Zhang">
-  <meta name="copyright" content="&copy; Ying Zhang 2019">
-  
-
-  <!-- External libraries -->
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/monokai-sublime.min.css">
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css">
-
-  <!-- Favicon and other icons (made with http://www.favicon-generator.org/) -->
-  <link rel="shortcut icon" href="/assets/icons/write.png" type="image/x-icon">
-  <link rel="icon" href="/assets/icons/write.png" type="image/x-icon">
-  <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/write.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/write.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/write.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/write.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/write.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/write.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/write.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/write.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/write.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="/assets/icons/write.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/write.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/write.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/write.png">
-  <link rel="manifest" href="/assets/icons/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="/assets/icons/write.png">
-  <meta name="theme-color" content="#ffffff">
-
-  
-  <!-- Facebook OGP cards -->
-  <meta property="og:description" content="深度度量学习" />
-  <meta property="og:url" content="http://localhost:4000/deep-learning/2019/11/03/Deep-Metric-Learning.html">
-  <meta property="og:site_name" content="Ying Zhang" />
-  <meta property="og:title" content=" 深度度量学习 Deep Metric Learning" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="http://localhost:4000/assets/write.png" />
-  <meta property="og:image:type" content="image/png" />
-  <meta property="og:image:width" content="612" />
-  <meta property="og:image:height" content="605" />
-  
-
-  
-  <!-- Twitter: card tags -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content=" 深度度量学习 Deep Metric Learning">
-  <meta name="twitter:description" content="深度度量学习">
-  <meta name="twitter:image" content="http://localhost:4000/assets/Y.png">
-  <meta name="twitter:url" content="http://localhost:4000/deep-learning/2019/11/03/Deep-Metric-Learning.html">
-  
-
-  
-
-  <!-- Site styles -->
-  <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/deep-learning/2019/11/03/Deep-Metric-Learning.html">
-	<link rel="alternate" type="application/rss+xml" title="Ying Zhang" href="http://localhost:4000/feed.xml" />
-	
-	<!-- Tooltips -->
-	<script type="text/javascript">
-		window.tooltips = []
-	</script>
-
-  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-  <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-          tex2jax: {
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-          inlineMath: [['$','$']]
-          }
-      });
-  </script>
-</head>
-
-
-  <body>
-
-    <header class="navigation" role="banner">
-  <div class="navigation-wrapper">
-    <a href="/" class="logo">
-      
-      <img src="/assets/write.png" alt="Ying Zhang">
-      
-    </a>
-    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <nav role="navigation">
-      <ul id="js-navigation-menu" class="navigation-menu show">
-				
-	
-
-	
-	<li class="nav-link"><a href="/about/">About</a>
-	
-
-	
-
-	
-
-	
-	<li class="nav-link"><a href="/posts/">Posts</a>
-	
-
-	
-	<li class="nav-link"><a href="/typography/">Typography</a>
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-      </ul>
-    </nav>
-  </div>
-</header>
-
-
-    <div class="page-content">
-        <div class="post">
-
-<div class="post-header-container " >
-  <div class="scrim ">
-    <header class="post-header">
-      <h1 class="title"> 深度度量学习 Deep Metric Learning</h1>
-      <p class="info">by <strong>Ying Zhang</strong></p>
-    </header>
-  </div>
-</div>
-
-<div class="wrapper">
-
- <span class="page-divider">
-  <span class="one"></span>
-  <span class="two"></span>
-</span>
- 
-
-<section class="post-meta">
-  <div class="post-date">November 3, 2019</div>
-  <div class="post-categories">
-  in 
-    
-    <a href="/category/Deep-Learning">Deep-learning</a>
-    
-  
-  </div>
-</section>
-
-<article class="post-content">
-  <h1 id="深度度量学习">深度度量学习</h1>
+I"AF<h1 id="深度度量学习">深度度量学习</h1>
 
 <h2 id="距离度量学习">距离度量学习</h2>
 <p>在搜索任务中，给定查询样本和候选集合，我们一般采用的步骤是：1）提取样本特征；2）计算查询与候选样本特征之间的距离；3）返回距离最小的候选作为搜索结果。</p>
@@ -237,13 +64,13 @@
 
 <p>针对阈值选择，该文并没有进行比较深入的讨论，一般根据经验设置 $m=0.2$。</p>
 
-<p>研究者们在不同的应用场景中对 Triplet Loss 进行了一系列改进，Chen 等人在 CVPR2017 上针对行人再识别提出四元组损失函数 <a href="http://zpascal.net/cvpr2017/Chen_Beyond_Triplet_Loss_CVPR_2017_paper.pdf">Quadruplet Loss</a>，定义如下：</p>
+<p>研究者们在不同的应用场景中对 Triplet Loss 进行了一系列改进，Chen等人在CVPR2017上针对行人再识别提出四元组损失函数 <a href="http://zpascal.net/cvpr2017/Chen_Beyond_Triplet_Loss_CVPR_2017_paper.pdf">Quadruplet Loss</a>，定义如下：</p>
 <center>$$L_{quad}= \sum \limits_{i,j,k} [g(\boldsymbol{x}_{i}, \boldsymbol{x}_{j})^2 - g(\boldsymbol{x}_{i}, \boldsymbol{x}_{k})^2 + \alpha_1]_{+} + \sum \limits_{i,j,k,l}[g(\boldsymbol{x}_{i}, \boldsymbol{x}_{j})^2 - g(\boldsymbol{x}_{l}, \boldsymbol{x}_{k})^2 + \alpha_1]_{+} $$
 $$s.t. s_i = s_j, s_i \neq s_k, s_i \neq s_l, s_l \neq s_k$$</center>
 
 <p>Quadruplet loss 在 triplet loss（第一项）基础上增加了不同类别负样本之间的距离约束（第二项），从而进一步增大学习到特征的类间差异。</p>
 
-<p>Wang 等人在ICCV2017上提出 <a href="https://arxiv.org/pdf/1708.01682.pdf">Angular Loss</a>，约束三元组样本构成三角形中以 <script type="math/tex">x_n</script> 为顶点的的夹角越小越好，其形式如下：</p>
+<p>Wang 等人在ICCV2017上提出 <a href="https://arxiv.org/pdf/1708.01682.pdf">Angular Loss</a>，约束三元组样本构成三角形中以$x_n$为顶点的的夹角越小越好，其形式如下：</p>
 <center>$$L_{ang}=\left[\|\boldsymbol{x}_a - \boldsymbol{x}_p\|^2 - 4\tan^2\alpha\|\boldsymbol{x}_n-\boldsymbol{x}_c\|^2 \right]_+$$</center>
 <p>其中 <script type="math/tex">\alpha</script> 是角度超参，一般取 <script type="math/tex">36^{\circ} \leq \alpha \leq 55^{\circ}</script>。有意思的是，该文从求梯度角度阐述 Angular Loss 的优越性，Triplet Loss 在求梯度时仅依赖两个样本点，而 Angular Loss 则同时考虑了参与损失函数计算的三个样本点。</p>
 
@@ -253,17 +80,17 @@ $$s.t. s_i = s_j, s_i \neq s_k, s_i \neq s_l, s_l \neq s_k$$</center>
 ​
 <script type="math/tex">~~~~~~~~~~~~~~~~~~~~~~~\frac{\partial L_{tri}}{\partial \boldsymbol{x}_a} = 2(\boldsymbol{x}_n -\boldsymbol{x}_p)~~~~~~~~~~~~~~~\frac{\partial L_{ang}}{\partial \boldsymbol{x}_a} = 2(\boldsymbol{x}_a -\boldsymbol{x}_p)-2\tan^2\alpha(\boldsymbol{x}_a +\boldsymbol{x}_p - 2\boldsymbol{x}_n)</script></p>
 
-<p>此外，还有各种各样的三元组样本挖掘策略，如 <a href="https://arxiv.org/pdf/1703.07737.pdf">Hard Sample Mining (HSM)</a> 对每个目标样本选择距离最大的同类图像和距离最小的不同类图像来构建三元组，<a href="https://arxiv.org/pdf/1710.00478.pdf">Margin Sample Mining Loss (MSML)</a> 结合四元组损失函数和难样本挖掘策略，以及 <a href="http://openaccess.thecvf.com/content_ECCV_2018/papers/Baosheng_Yu_Correcting_the_Triplet_ECCV_2018_paper.pdf">Correcting the Triplet Selection Bias</a>，<a href="http://openaccess.thecvf.com/content_ICCV_2017/papers/Harwood_Smart_Mining_for_ICCV_2017_paper.pdf">Smart Mining</a> 和 <a href="https://arxiv.org/pdf/1904.09626.pdf">Log-ratio Loss+Dense Triplet Mining</a> 等。自适应阈值选取策略如 <a href="http://openaccess.thecvf.com/content_ECCV_2018/papers/Ge_Deep_Metric_Learning_ECCV_2018_paper.pdf">Hierarchical Triplet Loss</a> 构建层次树动态计算阈值，样本生成策略如 <a href="http://openaccess.thecvf.com/content_CVPR_2019/papers/Zheng_Hardness-Aware_Deep_Metric_Learning_CVPR_2019_paper.pdf">hardness-aware deep metric learning (HDML)</a> 由易到难生成样本来保证训练过程的高效性（这与 <a href="https://ronan.collobert.com/pub/matos/2009_curriculum_icml.pdf">Curriculum Learning</a> 的思路有点像，网络先学习简单的样本，再慢慢学习更难的样本，从而帮助网络加速收敛并找到更好的局部最优）。</p>
+<p>此外，还有各种各样的三元组样本挖掘策略，如 <a href="https://arxiv.org/pdf/1703.07737.pdf">Hard Sample Mining (HSM)</a> 对每个目标样本选择距离最大的同类图像和距离最小的不同类图像来构建三元组，<a href="https://arxiv.org/pdf/1710.00478.pdf">Margin Sample Mining Loss (MSML)</a> 结合四元组损失函数和难样本挖掘策略，以及 <a href="http://openaccess.thecvf.com/content_ECCV_2018/papers/Baosheng_Yu_Correcting_the_Triplet_ECCV_2018_paper.pdf">Correcting the Triplet Selection Bias</a>，<a href="http://openaccess.thecvf.com/content_ICCV_2017/papers/Harwood_Smart_Mining_for_ICCV_2017_paper.pdf">Smart Mining</a> 和 <a href="https://arxiv.org/pdf/1904.09626.pdf">Log-ratio Loss+Dense Triplet Mining</a>等。自适应阈值选取策略如 <a href="http://openaccess.thecvf.com/content_ECCV_2018/papers/Ge_Deep_Metric_Learning_ECCV_2018_paper.pdf">Hierarchical Triplet Loss</a> 构建层次树动态计算阈值，样本生成策略如 <a href="http://openaccess.thecvf.com/content_CVPR_2019/papers/Zheng_Hardness-Aware_Deep_Metric_Learning_CVPR_2019_paper.pdf">hardness-aware deep metric learning (HDML)</a> 由易到难生成样本来保证训练过程的高效性（这与 <a href="https://ronan.collobert.com/pub/matos/2009_curriculum_icml.pdf">Curriculum Learning</a> 的思路有点像，网络先学习简单的样本，再慢慢学习更难的样本，从而帮助网络加速收敛并找到更好的局部最优）。</p>
 
 <h3 id="基于批量数据计算的损失函数">基于批量数据计算的损失函数</h3>
 
-<p>考虑到三元组损失函数仅从一个批量中选择正负样本对，并不能充分利用批量中所有样本的信息，一些研究者提出基于批量数据计算的损失函数，包括 Liftedstruct，Histogram Loss，N-pair Loss 等。</p>
+<p>考虑到三元组损失函数仅从一个批量中选择正负样本对，并不能充分利用批量中所有样本的信息，一些研究者提出基于批量数据计算的损失函数，包括Liftedstruct，Histogram Loss，N-pair Loss等。</p>
 
 <h4 id="liftedstruct">Liftedstruct</h4>
 <p><a href="https://arxiv.org/pdf/1511.06452.pdf">Liftedstruct</a> 由 Song 等人在 CVPR2016 上提出，定义如下
 ​<center>$$J = \frac{1}{2\hat{\mathcal{P}}} \sum \limits_{(i,j) \in \hat{\mathcal{P}}} \max(0, J_{i,j})^2$$</center>
 ​<center>$$J_{i,j} = D_{i,j} + \max \left( \max \limits_{(i,k) \in \hat{\mathcal{N}}} \alpha - D_{j,k}, \max \limits_{(j,l) \in \hat{\mathcal{N}}} \alpha - D_{j,l}\right)$$</center>
-从公式上看，该损失函数的原始形式类似 online triplet loss，只不过是针对每对正样本 <script type="math/tex">(\boldsymbol{x}_{i}, \boldsymbol{x}_{j})</script> 选择双方的 hardest negative sample 来计算损失。考虑到 hinge 函数的非平滑性，该文提出优化其平滑上界</p>
+从公式上看，该损失函数的原始形式类似 online triplet loss，只不过是针对每对正样本 <script type="math/tex">(\boldsymbol{x}_{i}, \boldsymbol{x}_{j})</script> 选择双方的hardest negative sample 来计算损失。考虑到hinge函数的非平滑性，该文提出优化其平滑上界</p>
 <center>$$\tilde{J}_{i,j} = D_{i,j} + \log \left( \sum \limits_{(i,k) \in \mathcal{N}} \exp(\alpha - D_{j,k}) ＋ \sum \limits_{(j,l) \in \mathcal{N}} \exp(\alpha - D_{j,l})\right)$$</center>
 <p>该平滑形式的损失函数则利用了每个样本的所有负样本进行损失计算。</p>
 
@@ -273,7 +100,7 @@ $$s.t. s_i = s_j, s_i \neq s_k, s_i \neq s_l, s_l \neq s_k$$</center>
 
 <p><img src="/assets/metriclearning/histogram.png" alt="Histogram" /></p>
 
-<p>具体来说，给定正负样本集合 <script type="math/tex">S^+</script> 和 <script type="math/tex">S^-</script>，我们将 <script type="math/tex">[-1, +1]</script> 距离划分为 <script type="math/tex">R</script> 个 bin,每个 bin 的宽度为 <script type="math/tex">\Delta =\frac{2}{R-1}</script>，节点为 <script type="math/tex">t_1=-1, t_2, ...,t_R=+1</script>，距离分布直方图 <script type="math/tex">H^+</script> 的每个 bin 上的值 <script type="math/tex">h_r^+</script> 计算如下：</p>
+<p>具体来说，给定正负样本集合 <script type="math/tex">S^+</script> 和 <script type="math/tex">S^-</script>，我们将 <script type="math/tex">[-1, +1]</script> 距离划分为 <script type="math/tex">R</script> 个bin,每个bin的宽度为 <script type="math/tex">\Delta =\frac{2}{R-1}</script>，节点为 <script type="math/tex">t_1=-1, t_2, ...,t_R=+1</script>，距离分布直方图 <script type="math/tex">H^+</script> 的每个 bin 上的值 <script type="math/tex">h_r^+</script> 计算如下：</p>
 <center>$$h_r^+ = \frac{1}{S^+} \sum \limits_{m_{i,j}=+1} \delta_{i,j,r}$$</center>
 <p>其中
 ​<center>$$\begin{split} \delta_{i,j,r} = ~~~~&amp;(s_{i,j} - t_{r-1})/\Delta~~~~~~~~~if~~s_{i,j} \in [t_{r-1}; t_r]; \\
@@ -284,7 +111,7 @@ $$s.t. s_i = s_j, s_i \neq s_k, s_i \neq s_l, s_l \neq s_k$$</center>
 <center>$$L_{hist}=\sum \limits_{r=1}^R h_r^- \left(\sum \limits_{q=1}^r h_q^+ \right)=\sum \limits_{r=1}^R h_r^- \phi_r^+$$</center>
 <p>其中 <script type="math/tex">\phi_r^+</script> 为直方图 <script type="math/tex">H^+</script> 的累积和。</p>
 
-<p>Histogram Loss 避免了 Triplet Loss 中的阈值和样本选择，仅需要根据 batchsize 调节 bin 的数量，在多个数据集上取得了较好的结果。此外，Histogram Loss 需要较大的 batchsize (如256) 来更准确地估计距离分布情况。</p>
+<p>Histogram Loss 避免了Triplet Loss中的阈值和样本选择，仅需要根据batchsize调节bin的数量，在多个数据集上取得了较好的结果。此外，Histogram Loss 需要较大的batchsize (如256) 来更准确地估计距离分布情况。</p>
 
 <h4 id="n-pair-loss">N-pair Loss</h4>
 
@@ -295,171 +122,9 @@ $$s.t. s_i = s_j, s_i \neq s_k, s_i \neq s_l, s_l \neq s_k$$</center>
 <p>N-pair Loss 定义为</p>
 <center>$$\begin{split}L_{npair}({x, x^+, \{x_i\}_{i=1}^{N-1}}; f) &amp;= \log(1+ \sum \limits_{i=1}^{N-1} \exp(f^{\top}f_i -f^{\top}f^+ )) \\
 &amp;= -\log \frac{\exp(f^{\top}f^+)}{\exp(f^{\top}f^+)+\sum_{i=1}^{N-1}\exp(f^{\top}f_i)}\end{split}$$</center>
-<p>该损失函数与多分类 Softmax Loss 类似，即判断 <script type="math/tex">x</script> 属于 <script type="math/tex">x^+</script> 类而不属于其他负样本类。与 Triplet Loss 采用一个负样本相比，N-pair Loss 采用 <script type="math/tex">N-1</script> 个负样本可以加速模型收敛。该文也提出了一种 hard negative class mining 策略，从大量不同类别中选取 C 类，随机选取1类后再逐次选择违背距离约束的其他类别。</p>
+<p>该损失函数与多分类 Softmax Loss 类似，即判断 <script type="math/tex">x</script> 属于 <script type="math/tex">x^+</script> 类而不属于其他负样本类。与 Triplet Loss 采用一个负样本相比，N-pair Loss 采用 <script type="math/tex">N-1</script> 个负样本可以加速模型收敛。该文也提出了一种 hard negative class mining 策略，从大量不同类别中选取C类，随机选取1类后再逐次选择违背距离约束的其他类别。</p>
 
 <h2 id="总结">总结</h2>
 
 <p>深度度量学习的目标是学习好的<strong>特征</strong>，研究的重点在于如何设计损失函数，三元组损失函数目前应用较广，但仍依赖于精巧的实现，包括计算距离时是否要对特征归一化，采用欧式距离还是余弦距离，针对不用类型的数据集如何选择正负样本对，如何选取阈值等。基于批量数据计算的度量学习能够避免三元组损失函数中繁琐的样本和阈值选择问题，但仍需要更多实际任务来验证其有效性。</p>
-
-</article>
-
-
-
-<section class="tags">
-  <strong>Tags:</strong> <a href="/tag/deep-learning">deep-learning</a>,&nbsp;<a href="/tag/metric-learning">metric-learning</a>
-</section>
-
-
-
-<!-- <section class="rss">
-  <p class="rss-subscribe text"><strong>Subscribe <a href="/feed.xml">via RSS</a></strong></p>
-</section>
-
-<section class="share">
-  <span>Share: </span>
-  
-    
-    
-    
-    
-    
-    
-    
-    
-  
-</section> -->
-
-
-
-
-</div>
-</div>
-
-    </div>
-
-    <footer class="site-footer">
-
-  <div class="wrapper">
-
-    <h3 class="footer-heading">Ying Zhang</h3>
-
-    <div class="site-navigation">
-
-      <p><strong>Site Map</strong></p>
-      <ul class="pages">
-				
-	
-
-	
-	<li class="nav-link"><a href="/about/">About</a>
-	
-
-	
-
-	
-
-	
-	<li class="nav-link"><a href="/posts/">Posts</a>
-	
-
-	
-	<li class="nav-link"><a href="/typography/">Typography</a>
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-      </ul>
-    </div>
-
-    <div class="site-contact">
-
-      <p><strong>Contact</strong></p>
-      <ul class="social-media-list">
-        <li>
-          <a href="mailto:zydl0907@mail.dlut.edu.cn">
-            <i class="fa fa-envelope-o"></i>
-            <span class="username">zydl0907@mail.dlut.edu.cn</span>
-          </a>
-        </li>
-
-        
-          
-          <li>
-            <a href="https://github.com/YingZhangDUT" title="Fork me on GitHub">
-              <i class="fa fa-github"></i>
-              <span class="username">YingZhangDUT</span>
-            </a>
-          </li>
-          
-        
-
-      </ul>
-    </div>
-
-    <!-- <div class="site-signature">
-      <p class="rss-subscribe text"><strong>Subscribe <a href="/feed.xml">via RSS</a></strong></p>
-      <p class="text">Keep Walking, Thinking, and Learning.
-</p>
-    </div> -->
-
-  </div>
-
-</footer>
-
-<!-- Scripts -->
-<script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
-<script src="//unpkg.com/popper.js@1"></script>
-<script src="//unpkg.com/tippy.js@5"></script>
-
-<script type="text/javascript">
-$(document).ready(function() {
-  // Default syntax highlighting
-  hljs.initHighlightingOnLoad();
-
-  // Header
-  var menuToggle = $('#js-mobile-menu').unbind();
-  $('#js-navigation-menu').removeClass("show");
-  menuToggle.on('click', function(e) {
-    e.preventDefault();
-    $('#js-navigation-menu').slideToggle(function(){
-      if($('#js-navigation-menu').is(':hidden')) {
-        $('#js-navigation-menu').removeAttr('style');
-      }
-    });
-  });
-
-	// Enable tooltips via Tippy.js
-	if (Array.isArray(window.tooltips)) {
-		window.tooltips.forEach(function(tooltip) {
-			var selector = tooltip[0];
-			var config = tooltip[1];
-			tippy(selector, config);
-		})
-	}
-});
-
-</script>
-
-
-
-
-
-
-  </body>
-
-</html>
+:ET
