@@ -16,7 +16,7 @@ tags:	deep-learning metric-learning
 
 **距离度量学习（Distance Metric Learning）**算法一般是学习一个马氏矩阵，从而两个样本点 $\boldsymbol{x}_{i}$ 和 $\boldsymbol{x}_{j}$ 之间的距离定义为
 
-​$D_{\boldsymbol{M}}(\boldsymbol{x}_{i}, \boldsymbol{x}_{j}) = (\boldsymbol{x}_{i}-\boldsymbol{x}_{j})^\top \boldsymbol{M} (\boldsymbol{x}_{i}-\boldsymbol{x}_{j})$
+​                                                     $$D_{\boldsymbol{M}}(\boldsymbol{x}_{i}, \boldsymbol{x}_{j}) = (\boldsymbol{x}_{i}-\boldsymbol{x}_{j})^\top \boldsymbol{M} (\boldsymbol{x}_{i}-\boldsymbol{x}_{j})$$
 
 距离度量学习在人脸验证和行人再识别场景中研究较多，如 [Margin Nearest Neighbor Learning (LMNN)](http://jmlr.csail.mit.edu/papers/volume10/weinberger09a/weinberger09a.pdf)，[Information Theoretic Metric Learning (ITML)](http://www.cs.utexas.edu/users/pjain/pubs/metriclearning_icml.pdf) ，[Logistic Discriminant Metric Learning (LDML)](https://data.vision.ee.ethz.ch/cvl/mguillau/publications/Guillaumin2009iccv2_poster.pdf) ，[KISSME](https://www.tugraz.at/fileadmin/user_upload/Institute/ICG/Documents/lrs/pubs/koestinger_cvpr_2012.pdf)， [XQDA](https://zpascal.net/cvpr2015/Liao_Person_Re-Identification_by_2015_CVPR_paper.pdf)，[Probabilistic Relative Distance Comparison (PRDC)](https://www.eecs.qmul.ac.uk/~sgg/papers/ZhengGongXiang_CVPR2011.pdf) 等。
 
@@ -35,9 +35,9 @@ tags:	deep-learning metric-learning
 
 对比损失函数（[Contrastive Loss](http://yann.lecun.com/exdb/publis/pdf/hadsell-chopra-lecun-06.pdf)）起源于 Yann LeCun 等人在CVPR 2006上提出的 Dimensionality Reduction by Learning an Invariant Mapping (DrLIM) 算法，其主要思想是在学习降维映射函数时，相似的输入要被映射到低维空间相近的点，而不相似的输入则要被映射到相距较远的点。
 
-给定两个输入样本$X_{i}$ 和 $X_{j}$ ，以及匹配标签 $y_{i,j} \in \{0, 1\}$，其中 $y_{i,j}=1$ 表示两个样本相似，$y_{i,j}=0$表示不相似，降维映射函数$G_{\boldsymbol{W}}$，对比损失函数定义为
+给定两个输入样本 $X_{i}$ 和 $X_{j}$ ，以及匹配标签 $y_{i,j} \in \{0, 1\}$，其中 $y_{i,j}=1$ 表示两个样本相似，$y_{i,j}=0$ 表示不相似，降维映射函数$G_{\boldsymbol{W}}$，对比损失函数定义为
 
-​						                  	$L_{contrast}=y_{i,j}  \frac{1}{2} D_{i,j}^2 + (1 - y_{i,j}) \frac{1}{2} [m - D_{i,j}^2]_+$
+​						                  	$L_{contrast}=y_{i,j}  \frac{1}{2} D_{i,j}^2 +  (1 - y_{i,j}) \frac{1}{2} [m - D_{i,j}^2]_+$
 
 其中 $D_{i,j}=\|G_{\boldsymbol{W}}(X_{i}) - G_{\boldsymbol{W}}(X_{j})\|_{2}$ 为映射向量之间的欧式距离，hinge函数 $[z]_+=\max(z,0)$，$m$ 为阈值参数。该公式表明我们希望**相似样本之间的距离尽可能小，而不相似样本之间的距离要大于阈值m**。
 
@@ -47,11 +47,11 @@ tags:	deep-learning metric-learning
 
 ![triplet](/assets/metriclearning/triplet.png)
 
-给定目标样本 $\boldsymbol{x}_{i}^{a}$  ，正样本 $\boldsymbol{x}_{i}^{p}$ 和负样本 $\boldsymbol{x}_{i}^{n}$ ，以及网络$f$，三元组损失函数定义为
+给定目标样本 $\boldsymbol{x}_{i}^{a}$  ，正样本 $\boldsymbol{x}_{i}^{p}$ 和负样本 $\boldsymbol{x}_{i}^{n}$ ，以及网络 $f$，三元组损失函数定义为
 
 ​								$L_{tri}= [\|f(\boldsymbol{x}_{i}^{a}) - f(\boldsymbol{x}_{i}^{p})\|_{2}^{2} - \|f(\boldsymbol{x}_{i}^{a}) - f(\boldsymbol{x}_{i}^{n})\|_2^{2} + m, 0]_{+} $
 
-其中 $m$ 为阈值参数，作者在计算样本间欧式距离前对特征进行了归一化，即$\|f(\boldsymbol{x})\|_{2}=1$。该公式表明我们希望正样本对与负样本对之间的距离间隔至少为$m$ 。
+其中 $m$ 为阈值参数，作者在计算样本间欧式距离前对特征进行了归一化，即 $\|f(\boldsymbol{x})\|_{2}=1$。该公式表明我们希望正样本对与负样本对之间的距离间隔至少为$m$ 。
 
 从实际经验来看，Triplet Loss 在很多情况下表现会比 Contrastive Loss 好一些，目前也已广泛应用于各种涉及到度量学习的任务中。Quora 上讨论了一些可能的原因：
 

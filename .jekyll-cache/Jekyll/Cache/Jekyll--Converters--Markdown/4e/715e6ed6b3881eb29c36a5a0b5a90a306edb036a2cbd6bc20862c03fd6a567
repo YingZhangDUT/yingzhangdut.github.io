@@ -1,13 +1,13 @@
-I"�A<h1 id="深度度量学习">深度度量学习</h1>
+I"B<h1 id="深度度量学习">深度度量学习</h1>
 
 <h2 id="距离度量学习">距离度量学习</h2>
 <p>在搜索任务中，给定查询样本和候选集合，我们一般采用的步骤是：1）提取样本特征；2）计算查询与候选样本特征之间的距离；3）返回距离最小的候选作为搜索结果。</p>
 
 <p>常用的度量样本之间距离的方法包括欧式距离，余弦距离，汉明距离等。然而单一的距离度量方式难以适用不同场景下的搜索任务，已有的距离方式本身也可能存在缺陷，如欧式距离假设特征所有维度的权重相同，因此如何从数据中学习出有效的距离度量成为许多研究者关注的问题。</p>
 
-<p><strong>距离度量学习（Distance Metric Learning）</strong>算法一般是学习一个马氏矩阵，从而两个样本点 $\boldsymbol{x}<em>{i}$ 和 $\boldsymbol{x}</em>{j}$ 之间的距离定义为</p>
+<p><strong>距离度量学习（Distance Metric Learning）</strong>算法一般是学习一个马氏矩阵，从而两个样本点 https://latex.codecogs.com/gif.latex?$\boldsymbol{x}<em>{i}$ 和 $\boldsymbol{x}</em>{j}$ 之间的距离定义为</p>
 
-<p>​$D_{\boldsymbol{M}}(\boldsymbol{x}<em>{i}, \boldsymbol{x}</em>{j}) = (\boldsymbol{x}<em>{i}-\boldsymbol{x}</em>{j})^\top \boldsymbol{M} (\boldsymbol{x}<em>{i}-\boldsymbol{x}</em>{j})$</p>
+<p>​                                                     <script type="math/tex">D_{\boldsymbol{M}}(\boldsymbol{x}_{i}, \boldsymbol{x}_{j}) = (\boldsymbol{x}_{i}-\boldsymbol{x}_{j})^\top \boldsymbol{M} (\boldsymbol{x}_{i}-\boldsymbol{x}_{j})</script></p>
 
 <p>距离度量学习在人脸验证和行人再识别场景中研究较多，如 <a href="http://jmlr.csail.mit.edu/papers/volume10/weinberger09a/weinberger09a.pdf">Margin Nearest Neighbor Learning (LMNN)</a>，<a href="http://www.cs.utexas.edu/users/pjain/pubs/metriclearning_icml.pdf">Information Theoretic Metric Learning (ITML)</a> ，<a href="https://data.vision.ee.ethz.ch/cvl/mguillau/publications/Guillaumin2009iccv2_poster.pdf">Logistic Discriminant Metric Learning (LDML)</a> ，<a href="https://www.tugraz.at/fileadmin/user_upload/Institute/ICG/Documents/lrs/pubs/koestinger_cvpr_2012.pdf">KISSME</a>， <a href="https://zpascal.net/cvpr2015/Liao_Person_Re-Identification_by_2015_CVPR_paper.pdf">XQDA</a>，<a href="https://www.eecs.qmul.ac.uk/~sgg/papers/ZhengGongXiang_CVPR2011.pdf">Probabilistic Relative Distance Comparison (PRDC)</a> 等。</p>
 
@@ -24,9 +24,9 @@
 
 <p>对比损失函数（<a href="http://yann.lecun.com/exdb/publis/pdf/hadsell-chopra-lecun-06.pdf">Contrastive Loss</a>）起源于 Yann LeCun 等人在CVPR 2006上提出的 Dimensionality Reduction by Learning an Invariant Mapping (DrLIM) 算法，其主要思想是在学习降维映射函数时，相似的输入要被映射到低维空间相近的点，而不相似的输入则要被映射到相距较远的点。</p>
 
-<p>给定两个输入样本$X_{i}$ 和 $X_{j}$ ，以及匹配标签 $y_{i,j} \in {0, 1}$，其中 $y_{i,j}=1$ 表示两个样本相似，$y_{i,j}=0$表示不相似，降维映射函数$G_{\boldsymbol{W}}$，对比损失函数定义为</p>
+<p>给定两个输入样本 $X_{i}$ 和 $X_{j}$ ，以及匹配标签 $y_{i,j} \in {0, 1}$，其中 $y_{i,j}=1$ 表示两个样本相似，$y_{i,j}=0$ 表示不相似，降维映射函数$G_{\boldsymbol{W}}$，对比损失函数定义为</p>
 
-<p>​						                  	$L_{contrast}=y_{i,j}  \frac{1}{2} D_{i,j}^2 + (1 - y_{i,j}) \frac{1}{2} [m - D_{i,j}^2]_+$</p>
+<p>​						                  	$L_{contrast}=y_{i,j}  \frac{1}{2} D_{i,j}^2 +  (1 - y_{i,j}) \frac{1}{2} [m - D_{i,j}^2]_+$</p>
 
 <p>其中 $D_{i,j}=|G_{\boldsymbol{W}}(X_{i}) - G_{\boldsymbol{W}}(X_{j})|<em>{2}$ 为映射向量之间的欧式距离，hinge函数 $[z]</em>+=\max(z,0)$，$m$ 为阈值参数。该公式表明我们希望<strong>相似样本之间的距离尽可能小，而不相似样本之间的距离要大于阈值m</strong>。</p>
 
@@ -36,11 +36,11 @@
 
 <p><img src="/assets/metriclearning/triplet.png" alt="triplet" /></p>
 
-<p>给定目标样本 $\boldsymbol{x}<em>{i}^{a}$  ，正样本 $\boldsymbol{x}</em>{i}^{p}$ 和负样本 $\boldsymbol{x}_{i}^{n}$ ，以及网络$f$，三元组损失函数定义为</p>
+<p>给定目标样本 $\boldsymbol{x}<em>{i}^{a}$  ，正样本 $\boldsymbol{x}</em>{i}^{p}$ 和负样本 $\boldsymbol{x}_{i}^{n}$ ，以及网络 $f$，三元组损失函数定义为</p>
 
 <p>​								$L_{tri}= [|f(\boldsymbol{x}<em>{i}^{a}) - f(\boldsymbol{x}</em>{i}^{p})|<em>{2}^{2} - |f(\boldsymbol{x}</em>{i}^{a}) - f(\boldsymbol{x}<em>{i}^{n})|_2^{2} + m, 0]</em>{+} $</p>
 
-<p>其中 $m$ 为阈值参数，作者在计算样本间欧式距离前对特征进行了归一化，即$|f(\boldsymbol{x})|_{2}=1$。该公式表明我们希望正样本对与负样本对之间的距离间隔至少为$m$ 。</p>
+<p>其中 $m$ 为阈值参数，作者在计算样本间欧式距离前对特征进行了归一化，即 $|f(\boldsymbol{x})|_{2}=1$。该公式表明我们希望正样本对与负样本对之间的距离间隔至少为$m$ 。</p>
 
 <p>从实际经验来看，Triplet Loss 在很多情况下表现会比 Contrastive Loss 好一些，目前也已广泛应用于各种涉及到度量学习的任务中。Quora 上讨论了一些可能的原因：</p>
 
