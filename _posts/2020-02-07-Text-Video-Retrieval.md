@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "文本视频搜索 Text-to-Video Retrieval"
-date:   2020-02-08
+date:   2020-02-07
 author: Ying Zhang
 categories: Deep-Learning
 tags:	deep-learning text-to-video-retrieval

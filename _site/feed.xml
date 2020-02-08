@@ -6,16 +6,16 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 08 Feb 2020 13:19:41 +0800</pubDate>
-    <lastBuildDate>Sat, 08 Feb 2020 13:19:41 +0800</lastBuildDate>
+    <pubDate>Sat, 08 Feb 2020 13:48:42 +0800</pubDate>
+    <lastBuildDate>Sat, 08 Feb 2020 13:48:42 +0800</lastBuildDate>
     <generator>Jekyll v4.0.0</generator>
     
       <item>
         <title>文本视频搜索 Text-to-Video Retrieval</title>
         <description>&lt;h1 id=&quot;文本视频搜索-text-to-video-retrieval&quot;&gt;文本视频搜索 Text-to-Video Retrieval&lt;/h1&gt; &lt;h2 id=&quot;前言&quot;&gt;前言&lt;/h2&gt; &lt;p&gt;文本视频搜索（Text-to-Video Retrieval）是指给定一句文本描述，在视频库中查找相应视频。与图像文本匹配（Image-Text Matching）相似，研究者们致力于探索如何更好地度量文本和视频之间的相似性。然而相较于文本图像搜索，一方面视频数据采集标注和存储难度大，目前人工标记的高质量数据集较少；另一方面视频内容复杂多变、时长变化大、处理难度高，研究工作的进展也相对较慢。&lt;/p&gt; &lt;p&gt;&lt;img src=&quot;/assets/textvideoretrieval/text-to-video-retrieval.png&quot; alt=&quot;text-to-video-retrieval&quot; style=&quot;zoom:45%;&quot; /&gt;&lt;/p&gt; &lt;hr /&gt; &lt;h2 id=&quot;相关工作介绍&quot;&gt;相关工作介绍&lt;/h2&gt; &lt;p&gt;基于深度学习的文本视频搜索研究主要围绕两个思路来进行，一是如何融合视频的多模态特征，如利用图像，音频，动作等信息来学习更强大的视频特征；二是如何更有效地编码视频和文本特征，如采用不同类型的特征编码网络来学习互补特征。&lt;/p&gt; &lt;hr /&gt; &lt;h4 id=&quot;1-learning-joint-embedding-with-multimodal-cues-for-cross-modal-video-text-retrieval-icmr2018-pdf-code&quot;&gt;[1] Learning Joint Embedding with Multimodal Cues for...</description>
-        <pubDate>Sat, 08 Feb 2020 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/deep-learning/2020/02/08/Text-Video-Retrieval.html</link>
-        <guid isPermaLink="true">http://localhost:4000/deep-learning/2020/02/08/Text-Video-Retrieval.html</guid>
+        <pubDate>Fri, 07 Feb 2020 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/deep-learning/2020/02/07/Text-Video-Retrieval.html</link>
+        <guid isPermaLink="true">http://localhost:4000/deep-learning/2020/02/07/Text-Video-Retrieval.html</guid>
         
         <category>deep-learning</category>
         

@@ -1,4 +1,177 @@
-I"�S<h1 id="文本视频搜索-text-to-video-retrieval">文本视频搜索 Text-to-Video Retrieval</h1>
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>文本视频搜索 Text-to-Video Retrieval</title>
+  <meta name="description" content="文本视频搜索 Text-to-Video Retrieval">
+  
+  <meta name="author" content="Ying Zhang">
+  <meta name="copyright" content="&copy; Ying Zhang 2020">
+  
+
+  <!-- External libraries -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/monokai-sublime.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css">
+
+  <!-- Favicon and other icons (made with http://www.favicon-generator.org/) -->
+  <link rel="shortcut icon" href="/assets/icons/write.png" type="image/x-icon">
+  <link rel="icon" href="/assets/icons/write.png" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/write.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/write.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/write.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/write.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/write.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/write.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/write.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/write.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/write.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/assets/icons/write.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/write.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/write.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/write.png">
+  <link rel="manifest" href="/assets/icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/assets/icons/write.png">
+  <meta name="theme-color" content="#ffffff">
+
+  
+  <!-- Facebook OGP cards -->
+  <meta property="og:description" content="文本视频搜索 Text-to-Video Retrieval" />
+  <meta property="og:url" content="http://localhost:4000/deep-learning/2020/02/07/Text-Video-Retrieval.html">
+  <meta property="og:site_name" content="Ying Zhang" />
+  <meta property="og:title" content="文本视频搜索 Text-to-Video Retrieval" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="http://localhost:4000/assets/write.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="612" />
+  <meta property="og:image:height" content="605" />
+  
+
+  
+  <!-- Twitter: card tags -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="文本视频搜索 Text-to-Video Retrieval">
+  <meta name="twitter:description" content="文本视频搜索 Text-to-Video Retrieval">
+  <meta name="twitter:image" content="http://localhost:4000/assets/Y.png">
+  <meta name="twitter:url" content="http://localhost:4000/deep-learning/2020/02/07/Text-Video-Retrieval.html">
+  
+
+  
+
+  <!-- Site styles -->
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/deep-learning/2020/02/07/Text-Video-Retrieval.html">
+	<link rel="alternate" type="application/rss+xml" title="Ying Zhang" href="http://localhost:4000/feed.xml" />
+	
+	<!-- Tooltips -->
+	<script type="text/javascript">
+		window.tooltips = []
+	</script>
+
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+          tex2jax: {
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+          inlineMath: [['$','$']]
+          }
+      });
+  </script>
+</head>
+
+
+  <body>
+
+    <header class="navigation" role="banner">
+  <div class="navigation-wrapper">
+    <a href="/" class="logo">
+      
+      <img src="/assets/write.png" alt="Ying Zhang">
+      
+    </a>
+    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <nav role="navigation">
+      <ul id="js-navigation-menu" class="navigation-menu show">
+				
+	
+
+	
+	<li class="nav-link"><a href="/about/">About</a>
+	
+
+	
+
+	
+
+	
+	<li class="nav-link"><a href="/posts/">Posts</a>
+	
+
+	
+	<li class="nav-link"><a href="/typography/">Typography</a>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+	<div class="page-content">
+        <div class="post">
+
+<div class="post-header-container " >
+  <div class="scrim ">
+    <header class="post-header">
+      <h1 class="title">文本视频搜索 Text-to-Video Retrieval</h1>
+      <p class="info">by <strong>Ying Zhang</strong></p>
+    </header>
+  </div>
+</div>
+
+<div class="wrapper">
+
+ <span class="page-divider">
+  <span class="one"></span>
+  <span class="two"></span>
+</span>
+ 
+
+<section class="post-meta">
+  <div class="post-date">February 7, 2020</div>
+  <div class="post-categories">
+  in 
+    
+    <a href="/category/Deep-Learning">Deep-learning</a>
+    
+  
+  </div>
+</section>
+
+<article class="post-content">
+  <h1 id="文本视频搜索-text-to-video-retrieval">文本视频搜索 Text-to-Video Retrieval</h1>
 
 <h2 id="前言">前言</h2>
 <p>文本视频搜索（Text-to-Video Retrieval）是指给定一句文本描述，在视频库中查找相应视频。与图像文本匹配（Image-Text Matching）相似，研究者们致力于探索如何更好地度量文本和视频之间的相似性。然而相较于文本图像搜索，一方面视频数据采集标注和存储难度大，目前人工标记的高质量数据集较少；另一方面视频内容复杂多变、时长变化大、处理难度高，研究工作的进展也相对较慢。</p>
@@ -93,177 +266,18 @@
 
 <hr />
 
-<h2 id="常用数据集及实验结果">常用数据集及实验结果</h2>
+<h2 id="常用数据集">常用数据集</h2>
 
 <ul>
-  <li><strong>MSR-VTT</strong>  由微软亚洲研究院在 <a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/06/cvpr16.msr-vtt.tmei_-1.pdf">CVPR2016</a> 上针对 video captioning 任务提出，该数据集包含 10K 个视频片段，总时长约 41.2h，每个片段约 20 个文本描述，共有 200K 个视频文本数据对。数据集划分为 6513 个训练视频，497 个验证视频，和 2990 个测试视频。</li>
-</ul>
-
-<table>
-  <tr>
-    &lt;td rowspan="2", align="center"&gt; Methods &lt;/td&gt;
-    &lt;td colspan="3", align="center"&gt; Text-to-Video&lt;/td&gt;
-    &lt;td colspan="3", align="center"&gt; Video-to-Text&lt;/td&gt;
-  </tr>
-  <tr>
-    <td align="center"> R@1 </td>
-    <td align="center"> R@5 </td>
-    <td align="center"> R@10 </td>
-    <td align="center"> R@1 </td>
-    <td align="center"> R@5 </td>
-    <td align="center"> R@10 </td>
-  </tr>
-  <tr>
-    &lt;td colspan="7", align="center"&gt; 1000 test pairs &lt;/td&gt;
-  </tr>
-  <tr>
-    <td align="center"> MEE [2] </td>
-    <td align="center"> 14.2 </td>
-    <td align="center"> 39.2 </td>
-    <td align="center"> 53.8 </td>
-    &lt;td colspan="3", align="center"&gt; Median Rank: 9 &lt;/td&gt;
-  </tr>
-  <tr>
-    <td align="center"> JSFusion [6] </td>
-    <td align="center"> 10.2 </td>
-    <td align="center"> 31.2 </td>
-    <td align="center"> 43.2 </td>
-    &lt;td colspan="3", align="center"&gt; 5-choose-1: 83.4 &lt;/td&gt;
-  </tr>
-    <tr>
-    <td align="center"> MMEN [7] </td>
-    <td align="center"> 14.3 </td>
-    <td align="center"> 38.1 </td>
-    <td align="center"> 53.0 </td>
-    <td align="center"> 16.4 </td>
-    <td align="center"> 41.3 </td>
-    <td align="center"> 54.4 </td>
-  </tr>
-  <tr>
-    &lt;td colspan="7", align="center"&gt; all test pairs &lt;/td&gt;
-  </tr>
-  <tr>
-    <td align="center"> Dual Encoding [4] </td>
-    <td align="center"> 7.7 </td>
-    <td align="center"> 22.0 </td>
-    <td align="center"> 31.8 </td>
-    <td align="center"> 13.0 </td>
-    <td align="center"> 30.8 </td>
-    <td align="center"> 43.3 </td>
-  </tr>
-  <tr>
-    <td align="center"> Multimodal Cues (ResNet) [1] </td>
-    <td align="center"> 5.8 </td>
-    <td align="center"> 17.6 </td>
-    <td align="center"> 25.2 </td>
-    <td align="center"> 10.5 </td>
-    <td align="center"> 26.7 </td>
-    <td align="center"> 35.9 </td>
-  </tr>
-  <tr>
-    <td align="center"> Multimodal Cues (ResNet+I3D+Audio) [1] </td>
-    <td align="center"> 7.0 </td>
-    <td align="center"> 20.9 </td>
-    <td align="center"> 29.7 </td>
-    <td align="center"> 12.5 </td>
-    <td align="center"> 32.1 </td>
-    <td align="center"> 42.4 </td>
-  </tr>
-</table>
-
-<hr />
-
-<ul>
+  <li>
+    <p><strong>MSR-VTT</strong>  由微软亚洲研究院在 <a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/06/cvpr16.msr-vtt.tmei_-1.pdf">CVPR2016</a> 上针对 video captioning 任务提出，该数据集包含 10K 个视频片段，总时长约 41.2h，每个片段约 20 个文本描述，共有 200K 个视频文本数据对。数据集划分为 6513 个训练视频，497 个验证视频，和 2990 个测试视频。</p>
+  </li>
   <li>
     <p><strong>MSVD</strong> 在 <a href="http://www.cs.utexas.edu/~ml/papers/chen.acl11.pdf">NAACL-HLT 2011</a> 上提出，在 <a href="http://www.cs.utexas.edu/~ml/papers/chen.acl11.pdf">NAACL-HLT 2015</a> 上用于 video captioning，该数据集包含 1970 个视频片段，每个视频由一种或多种语言描述。该文对每个视频选取大约 40 个英文描述，并将数据集划分为1200 个训练视频，100 个验证视频，和 670 个测试视频。</p>
-
-    <table>
-  <tr>
-    &lt;td rowspan="2", align="center"&gt; Methods &lt;/td&gt;
-    &lt;td colspan="3", align="center"&gt; Text-to-Video&lt;/td&gt;
-    &lt;td colspan="3", align="center"&gt; Video-to-Text&lt;/td&gt;
-  </tr>
-  <tr>
-    <td align="center"> R@1 </td>
-    <td align="center"> R@5 </td>
-    <td align="center"> R@10 </td>
-    <td align="center"> R@1 </td>
-    <td align="center"> R@5 </td>
-    <td align="center"> R@10 </td>
-  </tr>
-  <tr>
-    <td align="center"> Multimodal Cues (ResNet) [1] </td>
-    <td align="center"> 16.1 </td>
-    <td align="center"> 41.1 </td>
-    <td align="center"> 53.5 </td>
-    <td align="center"> 23.4 </td>
-    <td align="center"> 45.4 </td>
-    <td align="center"> 53.0 </td>
-  </tr>
-  <tr>
-    <td align="center"> Multimodal Cues (ResNet+I3D) [1] </td>
-    <td align="center"> 20.3 </td>
-    <td align="center"> 47.8 </td>
-    <td align="center"> 61.1 </td>
-    <td align="center"> 31.5 </td>
-    <td align="center"> 51.0 </td>
-    <td align="center"> 61.5 </td>
-  </tr>
-  <tr>
-   <td align="center"> Dual Encoding [4] </td>
-   &lt;td colspan="3", align="center"&gt; mAP=0.232 &lt;/td&gt;
-   &lt;td colspan="3", align="center"&gt; - &lt;/td&gt;
-  </tr>
-</table>
   </li>
-</ul>
-
-<hr />
-
-<ul>
   <li>
     <p><strong>LSMDC 2016</strong> 来自 <a href="https://sites.google.com/site/describingmovies/">Large Scale Movie Description Challenge</a>，相应论文发表在 <a href="https://link.springer.com/content/pdf/10.1007/s11263-016-0987-1.pdf">IJCV2017</a>。该数据集融合了 <strong>M-VAD</strong>（<a href="https://arxiv.org/pdf/1503.01070.pdf">Arxiv2015</a>）和 <strong>MPII-MD</strong>（<a href="https://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Rohrbach_A_Dataset_for_2015_CVPR_paper.pdf">CVPR2015</a>）数据集，包含 200 部电影，总时长约147 h，共计 128,085个视频片段，和 128,118 个文本描述／台词。该数据集划分为 101,046 个训练片段和  7408 个验证片段。</p>
-
-    <table>
-  <tr>
-    &lt;td rowspan="2", align="center"&gt; Methods &lt;/td&gt;
-    &lt;td colspan="3", align="center"&gt; Text-to-Video&lt;/td&gt;
-    &lt;td colspan="3", align="center"&gt; Video-to-Text&lt;/td&gt;
-  </tr>
-  <tr>
-    <td align="center"> R@1 </td>
-    <td align="center"> R@5 </td>
-    <td align="center"> R@10 </td>
-    <td align="center"> R@1 </td>
-    <td align="center"> R@5 </td>
-    <td align="center"> R@10 </td>
-  </tr>
-  <tr>
-    <td align="center"> MEE [2] (1K test videos) </td>
-    <td align="center"> 10.1 </td>
-    <td align="center"> 25.6 </td>
-    <td align="center"> 34.6 </td>
-    &lt;td colspan="3", align="center"&gt; 5-choose-1: 73.9 &lt;/td&gt;
-  </tr>
-  <tr>
-    <td align="center"> JSFusion [6] (1K test videos) </td>
-    <td align="center"> 9.1 </td>
-    <td align="center"> 21.2 </td>
-    <td align="center"> 34.1 </td>
-    &lt;td colspan="3", align="center"&gt; 5-choose-1: 73.5 &lt;/td&gt;
-  </tr>
-  <tr>
-    <td align="center"> Dual Encoding [4] </td>
-    &lt;td colspan="3", align="center"&gt; mAP: 0.037 &lt;/td&gt;
-    &lt;td colspan="3", align="center"&gt; - &lt;/td&gt;
-  </tr>
-</table>
   </li>
-</ul>
-
-<hr />
-
-<ul>
   <li>其它数据集，包括 <a href="https://arxiv.org/pdf/1604.02748.pdf">TGIF</a>，<a href="https://www.zpascal.net/cvpr2019/Song_Polysemous_Visual-Semantic_Embedding_for_Cross-Modal_Retrieval_CVPR_2019_paper.pdf">MRW</a> 和 <a href="https://eccv2018.org/openaccess/content_ECCV_2018/papers/Dima_Damen_Scaling_Egocentric_Vision_ECCV_2018_paper.pdf">EPIC</a> 等。</li>
   <li>相关任务的数据集如 <a href="https://people.eecs.berkeley.edu/~lisa_anne/didemo.html">DiDeMo</a>，<a href="https://cs.stanford.edu/people/ranjaykrishna/densevid/">ActivityNet Captions</a>， <a href="https://www.aclweb.org/anthology/Q13-1003.pdf">TACoS</a>，<a href="https://github.com/jiyanggao/TALL">Charades-STA</a>，<a href="https://www.di.ens.fr/willow/research/howto100m/">HowTo100M</a>，<a href="https://vatex.org/main/index.html">VATEX</a> 等。</li>
 </ul>
@@ -296,4 +310,182 @@
 </ul>
 
 <p>除此之外，目前研究者们也致力于提出数据量更大、内容更广泛的数据集如 HowTo100M，来帮助文本视频表征学习，可以有效提升下游相关任务的性能。同时我们也看到，难的不是收集视频，而是获取准确的人工标记。因此，如何根据海量视频自带的信息（如标题／副标题／字幕／语音／背景音乐／人物等）来学习理解视频内容值得进一步探索。当然，这也是一项更复杂更庞大的工程。</p>
-:ET
+
+</article>
+
+
+
+<section class="tags">
+  <strong>Tags:</strong> <a href="/tag/deep-learning">deep-learning</a>,&nbsp;<a href="/tag/text-to-video-retrieval">text-to-video-retrieval</a>
+</section>
+
+
+
+<div id="gitmentContainer"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+    owner: 'YingZhangDUT',
+    repo: 'yingzhangdut.github.io',
+    oauth: {
+        client_id: 'Iv1.3fe7ed3cf3fd2140',
+        client_secret: 'a28796df4b331a2f54248651288da6c9517cab9a',
+    },
+});
+gitment.render('gitmentContainer');
+</script>
+
+<!-- <section class="rss">
+  <p class="rss-subscribe text"><strong>Subscribe <a href="/feed.xml">via RSS</a></strong></p>
+</section> -->
+
+<!-- <section class="share">
+  <span>Share: </span>
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+</section> -->
+
+
+
+
+
+</div>
+</div>
+
+	</div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h3 class="footer-heading">Ying Zhang</h3>
+
+    <div class="site-navigation">
+
+      <p><strong>Site Map</strong></p>
+      <ul class="pages">
+				
+	
+
+	
+	<li class="nav-link"><a href="/about/">About</a>
+	
+
+	
+
+	
+
+	
+	<li class="nav-link"><a href="/posts/">Posts</a>
+	
+
+	
+	<li class="nav-link"><a href="/typography/">Typography</a>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+      </ul>
+    </div>
+
+    <div class="site-contact">
+
+      <p><strong>Contact</strong></p>
+      <ul class="social-media-list">
+        <li>
+          <a href="mailto:zydl0907@mail.dlut.edu.cn">
+            <i class="fa fa-envelope-o"></i>
+            <span class="username">zydl0907@mail.dlut.edu.cn</span>
+          </a>
+        </li>
+
+        
+          
+          <li>
+            <a href="https://github.com/YingZhangDUT" title="Fork me on GitHub">
+              <i class="fa fa-github"></i>
+              <span class="username">YingZhangDUT</span>
+            </a>
+          </li>
+          
+        
+
+      </ul>
+    </div>
+
+    <!-- <div class="site-signature">
+      <p class="rss-subscribe text"><strong>Subscribe <a href="/feed.xml">via RSS</a></strong></p>
+      <p class="text">Keep Walking, Thinking, and Learning.
+</p>
+    </div> -->
+
+  </div>
+
+</footer>
+
+<!-- Scripts -->
+<script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
+<script src="//unpkg.com/popper.js@1"></script>
+<script src="//unpkg.com/tippy.js@5"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+  // Default syntax highlighting
+  hljs.initHighlightingOnLoad();
+
+  // Header
+  var menuToggle = $('#js-mobile-menu').unbind();
+  $('#js-navigation-menu').removeClass("show");
+  menuToggle.on('click', function(e) {
+    e.preventDefault();
+    $('#js-navigation-menu').slideToggle(function(){
+      if($('#js-navigation-menu').is(':hidden')) {
+        $('#js-navigation-menu').removeAttr('style');
+      }
+    });
+  });
+
+	// Enable tooltips via Tippy.js
+	if (Array.isArray(window.tooltips)) {
+		window.tooltips.forEach(function(tooltip) {
+			var selector = tooltip[0];
+			var config = tooltip[1];
+			tippy(selector, config);
+		})
+	}
+});
+
+</script>
+
+
+
+
+
+
+  </body>
+
+</html>
