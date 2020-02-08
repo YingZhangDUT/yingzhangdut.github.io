@@ -32,6 +32,7 @@ highlightjs_theme: "monokai-sublime"
 # https://github.com/sverrirs/jekyll-paginate-v2/blob/master/README-GENERATOR.md#site-configuration
 pagination:
   enabled: true
+  collection: 'posts'
   per_page: 5
   permalink: "/page/:num/"
   sort_reverse: true
