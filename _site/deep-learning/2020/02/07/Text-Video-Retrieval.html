@@ -321,19 +321,42 @@
 
 
 
-<div id="gitmentContainer"></div>
+ <!-- Gitalk comment start  -->
+
+ <!-- Link Gitalk  -->
+<!--  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+ <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script> 
+ <div id="gitalk-container"></div>     <script type="text/javascript">
+     var gitalk = new Gitalk({
+
+     // Gitalk parameters
+         clientID: '3035d8720cb4841a62bf', //customize
+         clientSecret: '52206b6efae516c6a1f962a88ffb802a97cca1c5', //customize
+         repo: 'yingzhangdut.github.io', //customize
+         owner: 'YingZhangDUT', //customize
+         admin: ['YingZhangDUT'], //customize
+         id: window.location.pathname, // leave this line as it is
+        
+     });
+     gitalk.render('gitalk-container');
+ </script> -->
+ <!-- Gitalk end -->
+
+
+<div id="container"></div>
 <link rel="stylesheet" href="https://billts.site/extra_css/gitment.css">
 <script src="https://billts.site/js/gitment.js"></script>
 <script>
 var gitment = new Gitment({
+    id: '\{\{ page.date \}\}',
     owner: 'YingZhangDUT',
     repo: 'yingzhangdut.github.io',
     oauth: {
-        client_id: 'Iv1.3fe7ed3cf3fd2140',
-        client_secret: 'a28796df4b331a2f54248651288da6c9517cab9a',
+        client_id: '3035d8720cb4841a62bf',
+        client_secret: '52206b6efae516c6a1f962a88ffb802a97cca1c5',
     },
-});
-gitment.render('gitmentContainer');
+})
+gitment.render('container')
 </script>
 
 <!-- <section class="rss">
@@ -415,9 +438,9 @@ gitment.render('gitmentContainer');
       <p><strong>Contact</strong></p>
       <ul class="social-media-list">
         <li>
-          <a href="mailto:zydl0907@mail.dlut.edu.cn">
+          <a href="mailto:zydl0907@gmail.com">
             <i class="fa fa-envelope-o"></i>
-            <span class="username">zydl0907@mail.dlut.edu.cn</span>
+            <span class="username">zydl0907@gmail.com</span>
           </a>
         </li>
 
