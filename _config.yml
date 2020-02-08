@@ -85,8 +85,12 @@ social:
     desc: Fork me on GitHub
     share: false
 
-
-
+  - name: Twitter
+    icon: twitter
+    username: yingzhang
+    url: ""
+    desc: Follow me on Twitter
+    share: true
 
 # Social sharing protocols
 # These are for automatically generating sharing metadata for FB and Twitter

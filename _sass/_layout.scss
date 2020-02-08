@@ -392,28 +392,32 @@ pre code.hljs {
 		@include outer-container;
 	}
 	.footer-heading {
-
 	}
+
 	/*
 	*	Site Navigation (left)
 	*/
-	.site-navigation {
-		@include span-columns(12);
-		@include media ($mobile) {
-			@include span-columns(6);
-		}
-		@include media ($tablet) {
-			@include span-columns(4);
-		}
-		font-size: 0.9em;
-		ul {
-			@extend %default-ul;
-		}
-	}
+	/*
+	* .site-navigation {
+	*	@include span-columns(12);
+	*	@include media ($mobile) {
+	*		@include span-columns(6);
+	*	}
+	*	@include media ($tablet) {
+	*		@include span-columns(4);
+	*	}
+	*	font-size: 0.9em;
+	*	ul {
+	*		@extend %default-ul;
+	*	}
+	*/
+	/*
 	/*
 	*	Contact Info (center)
 	*/
 	.site-contact {
+		position: absolute;
+    	left: 48%;
 		margin-top: 1em;
 		@include span-columns(12);
 		@include media ($mobile) {
@@ -437,17 +441,18 @@ pre code.hljs {
 	/*
 	*	Site Description/Signature (right)
 	*/
-	.site-signature {
-		margin-top: 1em;
-		@include span-columns(12);
-		@include media ($tablet) {
-			@include span-columns(4);
-			margin-right: 0;
-			margin-top: 0;
-		}
-		font-size: 0.9em;
-		a {
-			text-decoration: underline;
-		}
-	}
+	/*.site-signature {
+	*	margin-top: 1em;
+	*	@include span-columns(12);
+	*	@include media ($tablet) {
+	*		@include span-columns(4);
+	*		margin-right: 0;
+	*		margin-top: 0;
+	*	}
+	*	font-size: 0.9em;
+	*	a {
+	*		text-decoration: underline;
+	*	}
+	*}
+	*/
 }
