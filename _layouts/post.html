@@ -41,9 +41,9 @@ layout: default
 {% endif %}
 {% endif %}
 
-<div id="gitmentContainer"></div>
-<link rel="stylesheet" href="https://billts.site/extra_css/gitment.css">
-<script src="https://billts.site/js/gitment.js"></script>
+<div id="container"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
 var gitment = new Gitment({
     owner: 'YingZhangDUT',
@@ -53,7 +53,7 @@ var gitment = new Gitment({
         client_secret: 'a28796df4b331a2f54248651288da6c9517cab9a',
     },
 });
-gitment.render('gitmentContainer');
+gitment.render('container');
 </script>
 
 <!-- <section class="rss">
