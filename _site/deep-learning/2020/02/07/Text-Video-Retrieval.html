@@ -111,19 +111,13 @@
 	
 
 	
-	<li class="nav-link"><a href="/posts/">Posts</a>
+
+	
+	<li class="nav-link"><a href="/moments/">Moments</a>
 	
 
 	
-	<li class="nav-link"><a href="/typography/">Typography</a>
-	
-
-	
-
-	
-
-	
-
+	<li class="nav-link"><a href="/posts/">Blog</a>
 	
 
 	
@@ -316,7 +310,7 @@
 
 
 <section class="tags">
-  <strong>Tags:</strong> <a href="/tag/deep-learning">deep-learning</a>,&nbsp;<a href="/tag/text-to-video-retrieval">text-to-video-retrieval</a>
+  <strong>Tags:</strong> <a href="/tag/deep-learning">deep-learning</a>,&nbsp;<a href="/tag/text-video-retrieval">text-video-retrieval</a>
 </section>
 
 
@@ -343,6 +337,25 @@
  <!-- Gitalk end -->
 
 
+
+	<section class="post-navigation">
+		<span class="prev-post">
+			
+				<a href="/deep-learning/2019/11/03/Deep-Metric-Learning.html">
+					<span class="fa-stack fa-lg">
+						<i class="fa fa-square fa-stack-2x"></i>
+						<i class="fa fa-angle-double-left fa-stack-1x fa-inverse"></i>
+					</span>
+					<span class="page-number"> 深度度量学习 Deep Metric Learning</span>
+				</a>
+			
+		</span>
+		<span class="next-post">
+			
+		</span>
+	</section>
+
+
 <div id="container"></div>
 <link rel="stylesheet" href="https://billts.site/extra_css/gitment.css">
 <script src="https://billts.site/js/gitment.js"></script>
@@ -359,25 +372,6 @@ var gitment = new Gitment({
 gitment.render('container')
 </script>
 
-<!-- <section class="rss">
-  <p class="rss-subscribe text"><strong>Subscribe <a href="/feed.xml">via RSS</a></strong></p>
-</section> -->
-
-<!-- <section class="share">
-  <span>Share: </span>
-  
-    
-    
-    
-    
-    
-    
-    
-    
-  
-</section> -->
-
-
 
 
 
@@ -390,79 +384,27 @@ gitment.render('container')
 
   <div class="wrapper">
 
-    <h3 class="footer-heading">Ying Zhang</h3>
-
-    <div class="site-navigation">
-
-      <p><strong>Site Map</strong></p>
-      <ul class="pages">
-				
-	
-
-	
-	<li class="nav-link"><a href="/about/">About</a>
-	
-
-	
-
-	
-
-	
-	<li class="nav-link"><a href="/posts/">Posts</a>
-	
-
-	
-	<li class="nav-link"><a href="/typography/">Typography</a>
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-      </ul>
-    </div>
-
     <div class="site-contact">
-
-      <p><strong>Contact</strong></p>
-      <ul class="social-media-list">
         <li>
           <a href="mailto:zydl0907@gmail.com">
             <i class="fa fa-envelope-o"></i>
             <span class="username">zydl0907@gmail.com</span>
           </a>
         </li>
-
-        
-          
-          <li>
-            <a href="https://github.com/YingZhangDUT" title="Fork me on GitHub">
-              <i class="fa fa-github"></i>
-              <span class="username">YingZhangDUT</span>
-            </a>
-          </li>
-          
-        
-
-      </ul>
     </div>
 
-    <!-- <div class="site-signature">
-      <p class="rss-subscribe text"><strong>Subscribe <a href="/feed.xml">via RSS</a></strong></p>
-      <p class="text">Keep Walking, Thinking, and Learning.
-</p>
-    </div> -->
+    
+      
+       <div class= "GitHub">
+        <li>
+          <a href="https://github.com/YingZhangDUT" title="Fork me on GitHub">
+            <i class="fa fa-github"></i>
+            <span class="username">YingZhangDUT</span>
+          </a>
+        </li>
+      </div>
+      
+    
 
   </div>
 
@@ -492,14 +434,14 @@ $(document).ready(function() {
     });
   });
 
-	// Enable tooltips via Tippy.js
-	if (Array.isArray(window.tooltips)) {
-		window.tooltips.forEach(function(tooltip) {
-			var selector = tooltip[0];
-			var config = tooltip[1];
-			tippy(selector, config);
-		})
-	}
+  // Enable tooltips via Tippy.js
+  if (Array.isArray(window.tooltips)) {
+    window.tooltips.forEach(function(tooltip) {
+      var selector = tooltip[0];
+      var config = tooltip[1];
+      tippy(selector, config);
+    })
+  }
 });
 
 </script>

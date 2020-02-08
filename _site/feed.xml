@@ -6,9 +6,9 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 08 Feb 2020 16:20:31 +0800</pubDate>
-    <lastBuildDate>Sat, 08 Feb 2020 16:20:31 +0800</lastBuildDate>
-    <generator>Jekyll v4.0.0</generator>
+    <pubDate>Sat, 08 Feb 2020 20:53:40 +0800</pubDate>
+    <lastBuildDate>Sat, 08 Feb 2020 20:53:40 +0800</lastBuildDate>
+    <generator>Jekyll v3.8.5</generator>
     
       <item>
         <title>文本视频搜索 Text-to-Video Retrieval</title>
@@ -19,7 +19,7 @@
         
         <category>deep-learning</category>
         
-        <category>text-to-video-retrieval</category>
+        <category>text-video-retrieval</category>
         
         
         <category>Deep-Learning</category>

@@ -114,21 +114,13 @@
 	
 
 	
-	<li class="nav-link"><a href="/posts/">Posts</a>
+
+	
+	<li class="nav-link"><a href="/moments/">Moments</a>
 	
 
 	
-	<li class="nav-link"><a href="/typography/">Typography</a>
-	
-
-	
-
-	
-
-	
-
-	
-
+	<li class="nav-link"><a href="/posts/">Blog</a>
 	
 
 	
@@ -159,48 +151,6 @@
 <div class="wrapper">
 <ul class="post-list">
   
-  <li>
-    <h2>
-      <a class="post-link" href="/deep-learning/2020/02/07/Text-Video-Retrieval.html">文本视频搜索 Text-to-Video Retrieval</a>
-    </h2>
-    <section class="post-excerpt" itemprop="description">
-      <p>文本视频搜索 Text-to-Video Retrieval 前言 文本视频搜索（Text-to-Video Retrieval）是指给定一句文本描述，在视频库中查找相应视频。与图像文本匹配（Image-Text Matching）相似，研究者们致力于探索如何更好地度量文本和视频之间的相似性。然而相较于文本图像搜索，一方面视频数据采集标注和存储难度大，目前人工标记的高质量数据集较少；另一方面视频内容复杂多变、时长变化大、处理难度高，研究工作的进展也相对较慢。 相关工作介绍 基于深度学习的文本视频搜索研究主要围绕两个思路来进行，一是如何融合视频的多模态特征，如利用图像，音频，动作等信息来学习更强大的视频特征；二是如何更有效地编码视频和文本特征，如采用不同类型的特征编码网络来学习互补特征。 [1] Learning Joint Embedding with Multimodal Cues for Cross-Modal Video-Text Retrieval, ICMR2018. [pdf] [code] 该文基本思路是结合视频不同模态输入与文本的相似度来提升搜索性能。该文将视频的 Activity Feature (RGB-I3D) 和 Audio Feature (SoundNet CNN) 相融合来学习 Activity-Text 联合特征空间，并采用 Object Feature (ResNet152) 来学习 Object-Text 联合特征空间，其中文本特征采用 word embeddings 300 + GRU 进行学习。此外，采用加权排序损失函数 （weighted ranking loss）并选取最难负样本...</p>
-    </section>
-    <section class="post-meta">
-      <div class="post-date">February 7, 2020</div>
-      <div class="post-categories">
-      in 
-        
-        <a href="/category/Deep-Learning">Deep-learning</a>
-        
-      
-      </div>
-    </section>
-  </li>
-  
-  <hr>
-  
-  
-  <li>
-    <h2>
-      <a class="post-link" href="/deep-learning/2019/11/03/Deep-Metric-Learning.html"> 深度度量学习 Deep Metric Learning</a>
-    </h2>
-    <section class="post-excerpt" itemprop="description">
-      <p>深度度量学习 距离度量学习 在搜索任务中，给定查询样本和候选集合，我们一般采用的步骤是：1）提取样本特征；2）计算查询与候选样本特征之间的距离；3）返回距离最小的候选作为搜索结果。 常用的度量样本之间距离的方法包括欧式距离，余弦距离，汉明距离等。然而单一的距离度量方式难以适用不同场景下的搜索任务，已有的距离方式本身也可能存在缺陷，如欧式距离假设特征所有维度的权重相同，因此如何从数据中学习出有效的距离度量成为许多研究者关注的问题。 距离度量学习（Distance Metric Learning）算法一般是学习一个马氏矩阵，从而两个样本点 和 $\boldsymbol{x}_{j}$ 之间的距离定义为 $$D_{\boldsymbol{M}}(\boldsymbol{x}_{i}, \boldsymbol{x}_{j}) = (\boldsymbol{x}_{i}-\boldsymbol{x}_{j})^\top \boldsymbol{M} (\boldsymbol{x}_{i}-\boldsymbol{x}_{j})$$ 距离度量学习在人脸验证和行人再识别场景中研究较多，如 Margin Nearest Neighbor Learning (LMNN)，Information Theoretic Metric Learning (ITML) ，Logistic Discriminant Metric Learning (LDML) ，KISSME， XQDA，Probabilistic Relative Distance Comparison (PRDC) 等。 基于距离度量矩阵学习的方法虽然多种多样，本质均是基于匹配样本距离小于非匹配样本距离的假设来定义不同的目标函数和约束条件，且求解方法多种多样。该方法在搜索阶段中一般利用学习到的马氏矩阵快速计算特征间的距离，效率较高。 深度度量学习 随着深度学习的兴起，研究者们开始关注如何利用深度神经网络学习好的样本特征，从而在特征映射空间中采用简单的欧式或余弦距离即可正确度量样本之间的距离，我们将其称为 深度度量学习（Deep Metric Learning）。 经典损失函数 深度度量学习的研究重点在于如何定义一个好的损失函数，来指导网络学习到具有判别能力的特征。经典的度量学习损失函数包括对比损失函数（Contrastive Loss）和三元组损失函数（Triplet Loss）。 Contrastive Loss...</p>
-    </section>
-    <section class="post-meta">
-      <div class="post-date">November 3, 2019</div>
-      <div class="post-categories">
-      in 
-        
-        <a href="/category/Deep-Learning">Deep-learning</a>
-        
-      
-      </div>
-    </section>
-  </li>
-  
-  
 </ul>
 
 <nav class="pagination" role="navigation">
@@ -211,7 +161,7 @@
       <i class="fa fa-angle-double-left fa-stack-1x fa-inverse"></i>
     </span>
 		
-		<span class="page-number">Page 1 of 1</span>
+		<span class="page-number">Page  of </span>
 		
 		<span class="fa-stack fa-lg">
       <i class="fa fa-square fa-stack-2x"></i>
@@ -230,81 +180,27 @@
 
   <div class="wrapper">
 
-    <h3 class="footer-heading">Ying Zhang</h3>
-
-    <div class="site-navigation">
-
-      <p><strong>Site Map</strong></p>
-      <ul class="pages">
-				
-	
-
-	
-	<li class="nav-link"><a href="/about/">About</a>
-	
-
-	
-
-	
-
-	
-	<li class="nav-link"><a href="/posts/">Posts</a>
-	
-
-	
-	<li class="nav-link"><a href="/typography/">Typography</a>
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-      </ul>
-    </div>
-
     <div class="site-contact">
-
-      <p><strong>Contact</strong></p>
-      <ul class="social-media-list">
         <li>
           <a href="mailto:zydl0907@gmail.com">
             <i class="fa fa-envelope-o"></i>
             <span class="username">zydl0907@gmail.com</span>
           </a>
         </li>
-
-        
-          
-          <li>
-            <a href="https://github.com/YingZhangDUT" title="Fork me on GitHub">
-              <i class="fa fa-github"></i>
-              <span class="username">YingZhangDUT</span>
-            </a>
-          </li>
-          
-        
-
-      </ul>
     </div>
 
-    <!-- <div class="site-signature">
-      <p class="rss-subscribe text"><strong>Subscribe <a href="/feed.xml">via RSS</a></strong></p>
-      <p class="text">Keep Walking, Thinking, and Learning.
-</p>
-    </div> -->
+    
+      
+       <div class= "GitHub">
+        <li>
+          <a href="https://github.com/YingZhangDUT" title="Fork me on GitHub">
+            <i class="fa fa-github"></i>
+            <span class="username">YingZhangDUT</span>
+          </a>
+        </li>
+      </div>
+      
+    
 
   </div>
 
@@ -334,14 +230,14 @@ $(document).ready(function() {
     });
   });
 
-	// Enable tooltips via Tippy.js
-	if (Array.isArray(window.tooltips)) {
-		window.tooltips.forEach(function(tooltip) {
-			var selector = tooltip[0];
-			var config = tooltip[1];
-			tippy(selector, config);
-		})
-	}
+  // Enable tooltips via Tippy.js
+  if (Array.isArray(window.tooltips)) {
+    window.tooltips.forEach(function(tooltip) {
+      var selector = tooltip[0];
+      var config = tooltip[1];
+      tippy(selector, config);
+    })
+  }
 });
 
 </script>
