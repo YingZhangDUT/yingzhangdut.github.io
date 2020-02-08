@@ -41,11 +41,12 @@ layout: default
 {% endif %}
 {% endif %}
 
-<div id="gitmentContainer"></div>
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script src="https://www.wenjunjiang.win/js/gitment.js" ></script>
+<div id="container"></div>
+<link rel="stylesheet" href="https://jjeejj.github.io/css/gitment.css">
+<script src="https://jjeejj.github.io/js/gitment.js"></script>
 <script>
 var gitment = new Gitment({
+    id: '\{\{ page.date \}\}',
     owner: 'YingZhangDUT',
     repo: 'yingzhangdut.github.io',
     oauth: {
@@ -53,7 +54,7 @@ var gitment = new Gitment({
         client_secret: '52206b6efae516c6a1f962a88ffb802a97cca1c5',
     },
 });
-gitment.render('gitmentContainer');
+gitment.render('container');
 </script>
 
 <!-- <section class="rss">
