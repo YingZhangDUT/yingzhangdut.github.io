@@ -5,7 +5,9 @@ permalink: /about/
 main_nav: true
 ---
 
-[comment]: <> ( ![alt text]({{ site.baseurl }}/assets/profile-placeholder.gif "Profile Picture"){:.profile} )
+<!--
+![alt text]({{ site.baseurl }}/assets/profile-placeholder.gif "Profile Picture"){:.profile} 
+-->
 
 ### 技术，读书，旅游，生活
 
