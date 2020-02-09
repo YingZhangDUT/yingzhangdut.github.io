@@ -390,6 +390,7 @@ pre code.hljs {
 	}
 	.wrapper {
 		@include outer-container;
+		text-align: center;
 	}
 	.footer-heading {
 	}
@@ -417,7 +418,7 @@ pre code.hljs {
 	*/
 	.site-contact {
 		position: absolute;
-    	left: 73%;
+    	left: 35%;
 		margin-top: 1em;
 		@include span-columns(12);
 		@include media ($mobile) {
@@ -433,11 +434,13 @@ pre code.hljs {
 		i {
 			width: 1.25em;
 			text-align: center;
+			margin-right: 15px;
 		}
 		ul {
 			@extend %default-ul;
 		}
 	}
+
 	/*
 	*	Site Description/Signature (right)
 	*/

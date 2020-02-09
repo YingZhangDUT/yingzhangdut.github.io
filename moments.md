@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Moments
 permalink: /moments/
 main_nav: true
@@ -7,13 +7,22 @@ order: 3
 ---
 
 <!--
-![alt text]({{ site.baseurl }}/assets/profile-placeholder.gif "Profile Picture"){:.profile} 
+{% for moment in site.moments %}
+  {% include card.html %}
+{% endfor %}
 -->
 
-### 技术，读书，旅游，生活
-
-> Keep Writing, Keep thinking, Keep Learning.
-
-### 目标
-
-> 希望保持写作习惯
+<main class="site__content">
+  <section class="moment">
+    <div class="container">
+      <div class="moment-list" itemscope="" itemtype="http://schema.org/Blog">
+		  <ul class="moments-list">
+		  {% for moment in site.moments %}
+		  	{% include card.html %}
+		  {% endfor %}
+		  </ul>
+		  {% if forloop.last == false %}<hr>{% endif %}
+      </div>
+    </div>
+  </section>
+</main> 
