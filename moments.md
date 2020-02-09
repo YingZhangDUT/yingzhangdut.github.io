@@ -14,13 +14,11 @@ order: 3
 
 <main class="site__content">
   <section class="moment">
-    <div class="container">
+    <div class="moment-container">
       <div class="moment-list" itemscope="" itemtype="http://schema.org/Blog">
-		  <ul class="moments-list">
 		  {% for moment in site.moments %}
-		  	{% include card.html %}
+		  	{% include card.html %} 
 		  {% endfor %}
-		  </ul>
 		  {% if forloop.last == false %}<hr>{% endif %}
       </div>
     </div>

@@ -1,13 +1,8 @@
-<a class="moment-card" href="{{ moment.url | relative_url }}" itemprop="blogMoments" itemscope="" itemtype="http://schema.org/Blogmomenting">
+<a class="moment-card" href="{{ moment.url | relative_url }}" itemprop="blogMoments" itemscope="" itemtype="http://schema.org/BlogPosting">
   {% if moment.featured-img %}
   <figure class="moment-card__thumb">
-    <img
-      src="/assets/moments/{{moment.featured-img}}_placehold.jpg",
-      data-srcset="/assets/moments/{{moment.featured-img}}_thumb.jpg, /assets/moments/{{moment.featured-img}}_thumb@2x.jpg 2x"
-      class="lazyload blur"
-      alt="{{moment.title}}"
-    />
-    <noscript><img src="/assets/moments/{{moment.featured-img}}_thumb.jpg" alt="{{ moment.title }}"></noscript>
+    <img src="/assets/moments/{{moment.featured-img}}_placehold.jpg" class="{{moment.title}}" />
+    <noscript><img src="{{site.url}}/assets/moments/{{moment.featured-img}}_thumb.jpg" alt="{{ moment.title }}"></noscript>
   </figure>
   {% else %}
   <figure class="moment-card__thumb">
@@ -16,7 +11,7 @@
   {% endif %}
   <div class="moment-card__inner">
     <div class="moment-card__header">
-      <h2>{{ moment.title | strip_html | truncate: 50 }}</h2>
+      <h2>{{ moment.title | strip_html | truncate: 25 }}</h2>
       {% assign date_format = site.sleek.date_format | default: "%b %-d, %Y" %}
       <span class="moment-card__meta">
         <time>{{ moment.date | date: date_format }}</time>
