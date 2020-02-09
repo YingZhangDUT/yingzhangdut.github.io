@@ -3,6 +3,7 @@ layout: page
 title: Moments
 permalink: /moments/
 main_nav: true
+order: 3
 ---
 
 <!--
