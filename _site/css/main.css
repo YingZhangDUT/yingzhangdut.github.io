@@ -230,6 +230,8 @@ pre code.hljs { font-size: 0.8333333333em; }
 
 .site__content { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
 
+.dark-bg { background-color: #313237; }
+
 /*
 img{max-width:100%;
 	height:auto;
@@ -260,7 +262,7 @@ figure { margin: 0; }
 @media (min-width: 75em) { .moment-card { width: 31.25%; margin-right: 3.125%; }
   .moment-card:nth-child(2n+2) { margin-right: 3.125%; }
   .moment-card:last-of-type, .moment-card:nth-child(3n+3) { margin-right: 0; } }
-.moment-card__thumb { margin: 0; width: 100%; background: #fff; position: relative; overflow: hidden; }
+.moment-card__thumb { margin: 0; width: 112%; background: #fff; position: relative; overflow: hidden; }
 
 .moment-card__thumb::after { content: ""; display: block; height: 0; width: 100%; padding-bottom: 56.25%; }
 
