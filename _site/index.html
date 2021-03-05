@@ -11,7 +11,7 @@
 ">
   
   <meta name="author" content="Ying Zhang">
-  <meta name="copyright" content="&copy; Ying Zhang 2020">
+  <meta name="copyright" content="&copy; Ying Zhang 2021">
   
 
   <!-- External libraries -->
@@ -154,6 +154,28 @@
   
   <li>
     <h2>
+      <a class="post-link" href="/posts/2021-03-05-human-3d/">3D人体相关研究总结 Human-3D-Overview</a>
+    </h2>
+    <section class="post-excerpt" itemprop="description">
+      <p>3D人体相关研究总结（Body、Pose、Reconstruction、Cloth、Animation） 前言 本文简要介绍与3D数字人相关的研究，包括常用3D表示、常用3D人体模型、3D人体姿态估计，带衣服3D人体重建，3D衣服建模，以及人体动作驱动等。 常用3D表示 目前3D 学习中，物体或场景的表示包括显式表示与隐式表示两种，主流的显式表示包括基于voxel、基于point cloud、和基于polygon mesh三种，隐式表示包括基于Occupancy Function[1]、和基于Signed Distance Functions[2]两种。下表简要总结了各种表示方法的原理及其相应优缺点。 表示方法VoxelPoint CloudPolygon MeshOccupancy FunctionSigned Distance Function 表示图像 表示原理 体素用规则的立方体表示3D物体，体素是数据在三维空间中的最小分割单位，类似于2D图像中的像素点云将多面体表示为三维空间中点的集合，一般用激光雷达或深度相机扫描后得到点云数据多边形网格将多面体表示为顶点与面片的集合，包含了物体表面的拓扑信息occupancy function 将物体表示为一个占有函数，即空间中每个点是否在表面上SDF 将物体表示为符号距离函数，即空间中每个点距离表面的距离 优缺点 + 规则表示，容易送入网络学习 + 可以处理任意拓扑结构 - 随着分辨率增加，内存呈立方级增长- 物体表示不够精细- 纹理不友好+ 容易获取+ 可以处理任意拓扑结构- 缺少点与点之间连接关系- 物体表示不够精细- 纹理不友好+ 高质量描述3D几何结构+ 内存占有较少 + 纹理友好- 不同物体类别需要不同的 mesh 模版- 网络较难学习+ 可以精细建模细节，理论上分辨率无穷+ 内存占有少 + 网络较易学习 -...</p>
+    </section>
+    <section class="post-meta">
+      <div class="post-date">March 5, 2021</div>
+      <div class="post-categories">
+      in 
+        
+        <a href="/category/Deep-Learning">Deep-learning</a>
+        
+      
+      </div>
+    </section>
+  </li>
+  
+  <hr>
+  
+  
+  <li>
+    <h2>
       <a class="post-link" href="/posts/2020-02-07-Text-Video-Retrieval/">文本视频搜索 Text-to-Video Retrieval</a>
     </h2>
     <section class="post-excerpt" itemprop="description">
@@ -239,7 +261,7 @@
       </a>
     </div>
     <br>
-    <span>&copy; 2020 Ying Zhang. All rights reserved.</span>
+    <span>&copy; 2021 Ying Zhang. All rights reserved.</span>
 
 <!--
   <style> 

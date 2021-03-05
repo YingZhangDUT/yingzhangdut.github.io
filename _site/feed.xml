@@ -6,9 +6,25 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 09 Feb 2020 23:34:07 +0800</pubDate>
-    <lastBuildDate>Sun, 09 Feb 2020 23:34:07 +0800</lastBuildDate>
+    <pubDate>Fri, 05 Mar 2021 21:18:06 +0800</pubDate>
+    <lastBuildDate>Fri, 05 Mar 2021 21:18:06 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>3D人体相关研究总结 Human-3D-Overview</title>
+        <description>&lt;h1 id=&quot;3d人体相关研究总结bodyposereconstructionclothanimation&quot;&gt;3D人体相关研究总结（Body、Pose、Reconstruction、Cloth、Animation）&lt;/h1&gt; &lt;h2 id=&quot;前言&quot;&gt;前言&lt;/h2&gt; &lt;p&gt;本文简要介绍与3D数字人相关的研究，包括常用3D表示、常用3D人体模型、3D人体姿态估计，带衣服3D人体重建，3D衣服建模，以及人体动作驱动等。&lt;/p&gt; &lt;hr /&gt; &lt;h2 id=&quot;常用3d表示&quot;&gt;常用3D表示&lt;/h2&gt; &lt;p&gt;目前3D 学习中，物体或场景的表示包括&lt;strong&gt;显式表示&lt;/strong&gt;与&lt;strong&gt;隐式表示&lt;/strong&gt;两种，主流的显式表示包括基于voxel、基于point cloud、和基于polygon mesh三种，隐式表示包括基于Occupancy Function[1]、和基于Signed Distance Functions[2]两种。下表简要总结了各种表示方法的原理及其相应优缺点。&lt;/p&gt; &lt;table&gt; &lt;tr&gt; &lt;th width=&quot;5%&quot;&gt;&lt;center&gt;表示方法&lt;/center&gt;&lt;/th&gt;&lt;th width=&quot;19%&quot;&gt;&lt;center&gt;Voxel&lt;/center&gt;&lt;/th&gt;&lt;th width=&quot;19%&quot;&gt;&lt;center&gt;Point Cloud&lt;/center&gt;&lt;/th&gt;&lt;th width=&quot;19%&quot;&gt;&lt;center&gt;Polygon Mesh&lt;/center&gt;&lt;/th&gt;&lt;th width=&quot;19%&quot;&gt;&lt;center&gt;Occupancy Function&lt;/center&gt;&lt;/th&gt;&lt;th width=&quot;19%&quot;&gt;&lt;center&gt;Signed Distance Function&lt;/center&gt;&lt;/th&gt;...</description>
+        <pubDate>Fri, 05 Mar 2021 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/posts/2021-03-05-human-3d/</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/2021-03-05-human-3d/</guid>
+        
+        <category>deep-learning</category>
+        
+        <category>human-3d</category>
+        
+        
+        <category>Deep-Learning</category>
+        
+      </item>
     
       <item>
         <title>文本视频搜索 Text-to-Video Retrieval</title>
